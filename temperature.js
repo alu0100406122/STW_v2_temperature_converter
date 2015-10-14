@@ -1,12 +1,23 @@
 "use strict";
 
+function medida(valor, tipo){
+    this.valor=valor;
+    this.tipo=tipo;
+}
+
+function temperatura(){
+    medida.call(this, valor, tipo);
+    this.category ='temperatura';
+}
+
+temperatura.prototype = new medida();
+
 function calculate(){
-    var result;
+    var result=new temperatura();
+    
     var original = document.getElementById("original");
     var temp = original.value;
     
-    //var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;                           //primera versión
-    //var regexp = /([-+]?\d+(?:\.\d*)?)(?:[eE]([-+]?\d+))?\s*([fFcC])/;    //segunda versión
     var regexp = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([cCfF])\s*$/i;      //Versión final
     var m = temp.match(regexp);     /*Cuando cumple la expresión regular*/
     
@@ -14,27 +25,6 @@ function calculate(){
         var num = m[1];
         var type = m[2];
         num = parseFloat(num);      //string --> float
-        /*var exp = m[2];
-        exp = parseInt(exp);
-        if(m[2]!==undefined){
-            var i,j;
-            i=1; j=10;
-            if(exp<0){
-                exp=-exp;
-                while(i<exp){
-                    j=j*10;
-                    i++;}
-                if(j!==0){
-                  num=num/j;
-                }}
-            else{
-              while(i<exp){
-                j=j*10;
-                i++;
-              }
-            if(j!==0)
-              num=num*j;
-            }}*/
         
         if (type=='c' || type=='C'){
             result = (num * 9/5)+32;
