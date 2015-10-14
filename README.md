@@ -2,15 +2,10 @@
 
 ###Conversor en JavaScript de grados Celsius a Farenheit y viceversa
 
-Que aprendemos
+##Versión 2
 
-* HTML básico
-* JavaScript básico
-* Expresiones Regulares
-* Un poquito de CSS
-* Uso de Emmet 
-* Uso de Mocha y Chai
-* Uso de Gulp
+En esta segunda versión de la práctica "Conversor en JavaScript de grados Celsius a Farenheit y viceversa" se ha modificado para incluir herencia y objetos.
+
 
 Enlaces:
 
