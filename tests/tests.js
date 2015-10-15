@@ -1,3 +1,18 @@
+var expect =chai.expect;
+
+describe("Test para ConverTemp", function() {
+
+    var fin = document.getElementById("resultado");
+  
+    it("32F == 0.00C", function(){
+        var result = new temperatura();
+        result.set_valor(32);
+        result.set_valor("F")
+        result.set_valor(result.a_c());
+        expect(result).to.equal(0.00);
+    });
+    
+/*
 var assert = chai.assert;
 
 suite('temperature', function() {
@@ -31,4 +46,4 @@ suite('temperature', function() {
         calculate();
         assert.isAbove(converted.innerHTML, "30.00C");
     });
-});
+});*/

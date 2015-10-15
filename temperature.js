@@ -50,9 +50,7 @@ function calculate(){
         num = parseFloat(num);      //string --> float*/
 
         result.set_valor(parseFloat(m[1]));
-        alert("Resultado->"+result.get_valor());
         result.set_tipo(m[2]);
-        alert("Tipo->"+result.get_tipo());
 
         if (result.get_tipo() =='c' || result.get_tipo() =='C'){
             result.set_valor(result.a_fa());
