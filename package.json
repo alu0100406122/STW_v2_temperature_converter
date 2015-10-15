@@ -1,28 +1,12 @@
 {
-  "name": "temperature_converter",
-  "version": "0.0.1",
-  "description": "ULL ESIT Grado en Ingeniería Informática. 4º Sistemas Web. \"Temperature Converter\"",
-  "main": "temperature.js",
-  "scripts": {
-    "test": "open tests/index.html"
+  "name": "v2_temperature_converter",
+  "version": "1.0.0",
+  "description": "\"ULL Grado en Ingeniería Informática. 4º Sistemas y Tecnolgías Web\"",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alu0100406122/temperature_converter.git"
-  },
-  "keywords": [
-    "regexp"
-  ],
-  "author": "Nayra",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alu0100406122/temperature_converter/issues"
-  },
-  "homepage": "https://github.com/alu0100406122/temperature_converter",
   "dependencies": {
-    "chai": "^3.3.0"
-  },
-  "devDependencies": {
     "chai": "^3.3.0",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
@@ -31,6 +15,23 @@
     "gulp-minify-html": "^1.0.4",
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
-    "mocha": "latest"
-  }
+    "sinon": "^1.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alu0100406122/v2_temperature_converter.git"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "María Nayra Rodríguez Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100406122/v2_temperature_converter/issues"
+  },
+  "homepage": "https://github.com/alu0100406122/v2_temperature_converter"
 }

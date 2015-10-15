@@ -1,8 +1,8 @@
 "use strict";
 
 function medida(valor, tipo){
-    this.valor=valor;
-    this.tipo=tipo;
+    this.Valor=valor;
+    this.Tipo=tipo;
 }
 
 function temperatura(valor, tipo){
@@ -12,22 +12,27 @@ function temperatura(valor, tipo){
 
 temperatura.prototype = new medida();
 
-medida.prototype.set_valor = function(){
-    this.valor=valor;
+medida.prototype.set_valor = function(v){
+    this.Valor=v;
 }
 
-medida.prototype.set_tipo = function(){
-    this.tipo=tipo;
+medida.prototype.set_tipo = function(t){
+    this.Tipo=t;
 }
 
 medida.prototype.get_valor = function(){
-    return this.valor=valor;
+    return this.Valor;
 }
 
 medida.prototype.get_tipo = function(){
-    return this.tipo=tipo;
+    return this.Tipo;
 }
-
+temperatura.prototype.a_fa=function(){
+    return ((this.get_valor()*9)/5)+32;
+}
+temperatura.prototype.a_c=function(){
+    return ((this.Valor-32)*5)/9;
+}
 
 function calculate(){
     
@@ -45,15 +50,17 @@ function calculate(){
         num = parseFloat(num);      //string --> float*/
 
         result.set_valor(parseFloat(m[1]));
-        result.set_valor(m[2]);
+        alert("Resultado->"+result.get_valor());
+        result.set_tipo(m[2]);
+        alert("Tipo->"+result.get_tipo());
 
-        if (result.get_tipo=='c' || result.get_tipo=='C'){
-            result.set_valor((num * 9/5)+32);
-            result = result.toFixed(2) + " Farenheit";  //toFixed --> Redondeo
+        if (result.get_tipo() =='c' || result.get_tipo() =='C'){
+            result.set_valor(result.a_fa());
+            result = result.get_valor() + " Farenheit";  //toFixed --> Redondeo
         }
         else{
-            result.set_valor((num -32)*5/9);
-            result = result.toFixed(2) + " Celsius";
+            result.set_valor(result.a_c());
+            result = result.get_valor() + " Celsius";
         }
         converted.innerHTML = result;
     }
