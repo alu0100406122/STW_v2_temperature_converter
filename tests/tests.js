@@ -1,17 +1,34 @@
-var expect =chai.expect;
+var expect = chai.expect;
 
-describe("Test para ConverTemp", function() {
+describe("Test para ConverTemp", function(){
 
     var fin = document.getElementById("resultado");
   
-    it("32F == 0.00C", function(){
+    it("32f === 0c", function(){
         var result = new temperatura();
         result.set_valor(32);
-        result.set_valor("F")
+        result.set_tipo("F")
         result.set_valor(result.a_c());
-        expect(result).to.equal(0.00);
+        expect(result).to.equal("0 Celsius");
     });
     
+    it("18f === -7,78 Celsius", function(){
+        var result = new temperatura();
+        result.set_valor(18);
+        result.set_tipo("C");
+        result.set_valor(result.a_c());
+        expect(result).to.equal("4.10 Farenheit");
+    });
+    
+    it("58f !== 26 Celsius", function(){
+        var result = new temperatura();
+        result.set_valor(58);
+        result.set_tipo("F");
+        result.set_valor(result.a_c());
+        expect(result).not.to.equal("26 Celsius");
+  });
+    
+});
 /*
 var assert = chai.assert;
 
