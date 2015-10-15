@@ -12,7 +12,7 @@ Pruebas con cada una de ellas.
 
 Enlaces:
 
-* Repositorio GitHUb: https://github.com/alu0100406122/temperature_converter/tree/gh-pages
-* URL Aplicación: http://alu0100406122.github.io/temperature_converter/
-* URL Tests: http://alu0100406122.github.io/temperature_converter/tests/
+* Repositorio GitHUb: https://github.com/alu0100406122/v2_temperature_converter/tree/gh-pages
+* URL Aplicación: http://alu0100406122.github.io/v2_temperature_converter/
+* URL Tests: http://alu0100406122.github.io/v2_temperature_converter/tests/
 * URL GitHub Page: http://alu0100406122.github.io/
