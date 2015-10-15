@@ -1,22 +1,71 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/v0.10.33/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/v0.10.33/bin/npm',
-1 verbose cli   'test' ]
+1 verbose cli   'install',
+1 verbose cli   'blanchet' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 error Failed to parse json
-4 error Unexpected token {
-5 error File: /home/ubuntu/workspace/STW/Conversor_Temperatura/temperature_converter/package.json
-6 error Failed to parse package.json data.
-6 error package.json must be actual JSON, not just JavaScript.
-6 error
-6 error This is not a bug in npm.
-6 error Tell the package author to fix their package.json file. JSON.parse
-7 error System Linux 3.14.13-c9
-8 error command "/home/ubuntu/.nvm/v0.10.33/bin/node" "/home/ubuntu/.nvm/v0.10.33/bin/npm" "test"
-9 error cwd /home/ubuntu/workspace/STW/Conversor_Temperatura/temperature_converter
-10 error node -v v0.10.33
-11 error npm -v 1.4.28
-12 error file /home/ubuntu/workspace/STW/Conversor_Temperatura/temperature_converter/package.json
-13 error code EJSONPARSE
-14 verbose exit [ 1, true ]
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'blanchet', null ]
+6 verbose cache add name=undefined spec="blanchet" args=["blanchet",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'blanchet',
+7 verbose parsed url   path: 'blanchet',
+7 verbose parsed url   href: 'blanchet' }
+8 silly lockFile dd61f76b-blanchet blanchet
+9 verbose lock blanchet /home/ubuntu/.npm/dd61f76b-blanchet.lock
+10 silly lockFile dd61f76b-blanchet blanchet
+11 silly lockFile dd61f76b-blanchet blanchet
+12 verbose addNamed [ 'blanchet', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 7828c544-blanchet blanchet@
+15 verbose lock blanchet@ /home/ubuntu/.npm/7828c544-blanchet.lock
+16 silly addNameRange { name: 'blanchet', range: '*', hasData: false }
+17 verbose request where is /blanchet
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 9167c8b1f53c8a3b
+20 verbose url raw /blanchet
+21 verbose url resolving [ 'https://registry.npmjs.org/', './blanchet' ]
+22 verbose url resolved https://registry.npmjs.org/blanchet
+23 verbose request where is https://registry.npmjs.org/blanchet
+24 info trying registry request attempt 1 at 22:06:27
+25 http GET https://registry.npmjs.org/blanchet
+26 http 404 https://registry.npmjs.org/blanchet
+27 silly registry.get cb [ 404,
+27 silly registry.get   { 'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '2',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Thu, 15 Oct 2015 22:06:28 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-lhr6329-LHR',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1444946787.545204,VS0,VE653' } ]
+28 silly lockFile 7828c544-blanchet blanchet@
+29 silly lockFile 7828c544-blanchet blanchet@
+30 error 404 Not Found
+30 error 404
+30 error 404 'blanchet' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404 It was specified as a dependency of 'v2_temperature_converter'
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Linux 3.14.13-c9
+32 error command "/home/ubuntu/.nvm/v0.10.33/bin/node" "/home/ubuntu/.nvm/v0.10.33/bin/npm" "install" "blanchet"
+33 error cwd /home/ubuntu/workspace/STW/Conversor_Temperatura/v2_temperature_converter
+34 error node -v v0.10.33
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]

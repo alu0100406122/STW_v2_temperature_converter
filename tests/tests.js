@@ -4,7 +4,7 @@ describe("Test para ConverTemp", function(){
 
     var fin = document.getElementById("resultado");
   
-    it("32f === 0c", function(){
+    it("32f === 0 Celsius", function(){
         var result = new temperatura();
         result.set_valor(32);
         result.set_tipo("F")
@@ -12,12 +12,12 @@ describe("Test para ConverTemp", function(){
         expect(result).to.equal("0 Celsius");
     });
     
-    it("18f === -7,78 Celsius", function(){
+    it("806f === 430 Celsius", function(){
         var result = new temperatura();
-        result.set_valor(18);
-        result.set_tipo("C");
+        result.set_valor(806);
+        result.set_tipo("F");
         result.set_valor(result.a_c());
-        expect(result).to.equal("4.10 Farenheit");
+        expect(result).to.equal("430 Celsius");
     });
     
     it("58f !== 26 Celsius", function(){
