@@ -2,7 +2,7 @@
 
 ###Conversor en JavaScript de grados Celsius a Farenheit y viceversa
 
-##Versión 2
+###Versión 2
 
 En esta segunda versión de la práctica "Conversor en JavaScript de grados Celsius a Farenheit y viceversa" se ha modificado para incluir herencia y objetos.
 
